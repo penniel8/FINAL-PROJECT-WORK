@@ -13,7 +13,7 @@ def draw_ui():
     print("="*60)
 
 def main():
-    # Create rooms [101–105] for demo
+  
     rooms = [Room(num) for num in range(101, 106)]
     bookings = []
 
@@ -34,7 +34,7 @@ def main():
             nights = int(input("Number of Nights: "))
             base_price = float(input("Base Price per Night (GHS): "))
 
-            # Find first available room
+      
             assigned = None
             for room in rooms:
                 if not room.is_occupied:
